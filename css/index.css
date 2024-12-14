@@ -148,3 +148,62 @@ footer{
    align-self: center;
     text-align: center;
  }
+ @media (max-width: 1200px) {
+    .conteneur {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes pour les écrans plus petits */
+        grid-template-areas:
+            'nav       nav'
+            'header    header'
+            'aside     main'
+            'aside     section'
+            'footer    footer';
+    }
+
+    
+    .petitTitre, .mesInfos, .monInteret, .miniTitreInfo {
+        font-size: 18px;  /* Taille plus petite */
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+    }
+}
+@media (max-width: 768px) {
+    .conteneur {
+        grid-template-columns: 1fr; /* Une seule colonne pour les petits écrans */
+        grid-template-areas:
+            'nav'
+            'header'
+            'main'
+            'aside'
+            'section'
+            'footer';
+    }
+
+   
+    .petitTitre {
+        font-size: 20px;  
+        padding-top: 4px;
+    }
+
+    .mesInfos, .monInteret, .miniTitreInfo {
+        padding-left: 15px;
+        font-size: 16px;  
+    }
+
+    
+    img {
+        width: 130px;
+        height: 130px;
+    }
+
+    footer {
+        font-size: 14px; 
+    }
+
+    nav {
+        flex-direction: column;  
+        padding: 10px;
+    }
+}

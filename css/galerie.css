@@ -2,7 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    
     background-image: linear-gradient(45deg,black,white);
 }
 
@@ -18,7 +17,8 @@ body {
     'nav nav nav nav'
     'header header header header'
     'main main main main'
-    'main main main main';
+    'main main main main'
+    'footer footer footer footer';
 }
 
 .galerie-item {
@@ -73,3 +73,6 @@ footer{
     grid-area: footer;
     align-items: center
 }
+a:hover{color: blue;}
+
+.font{font-family:Verdana, Geneva, Tahoma, sans-serif;}

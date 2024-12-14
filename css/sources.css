@@ -1,0 +1,96 @@
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:white;
+    background-color: grey;
+}
+
+h1, h3 {
+    color: grey;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Conteneur principal */
+.conteneur {
+    display: grid;
+  
+   background-image: linear-gradient(skyblue,white);
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    grid-template-areas: 
+    'nav nav nav nav'
+    'header header header header'
+    'main main main main'
+    'footer footer footer footer';
+}
+
+/* Grille de sources */
+.sources-grille {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+    gap: 20px; /* Espacement entre les cases */
+    width: 100%;
+    padding: 20px;
+}
+
+/* Éléments individuels */
+.source-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.source-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sources-grille {
+        grid-template-columns: 1fr; /* Une seule colonne sur petit écran */
+    }
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    border: 1px solid white;
+    justify-content: space-around;
+    grid-area: footer;
+    align-items: center
+}
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+}
+nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: solid 2px black;
+    padding: 10px;
+}
+main{grid-area: main;}
+a:hover{color: blue;}
