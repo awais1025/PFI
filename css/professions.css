@@ -1,0 +1,79 @@
+.font{font-family:Verdana, Geneva, Tahoma, sans-serif;}
+
+.conteneur{
+    display: grid;
+    margin: auto;
+    background-image: linear-gradient(lightskyblue,white);
+    grid-auto-rows: min-content;
+    background-color: lightskyblue;
+    grid-template-areas: 
+    'nav    nav     nav     nav'
+    'header     header  header header'
+    'main       main       main  main'
+    'footer footer footer footer ';
+    border: 2px solid black;
+ 
+}
+
+a:hover{color: blue;}
+
+a{color: purple;}
+
+body{background-color: grey;}
+
+nav {
+    
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: solid 2px black;
+    padding: 10px;
+}
+.professions{display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+border: 2px solid black;}
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+}
+
+.leftContent{
+  flex: 1;
+  text-align: center;
+  border-right: 2px solid black;
+}
+
+.leftContent > p{font-weight: bold;}
+.rightContent{flex : 2;
+}
+
+.professions:nth-child(even){background-color: white;}
+
+.professions:nth-child(odd){background-color: lightgrey}
+
+main>div{margin-left: 3em;
+margin-right: 3em;}
+
+.sources{text-align: center;
+margin-bottom: 1em;}
+
+p{margin: 5px;}
+
+main{grid-area: main;}
+
+.leftContent p{padding:1em}
+
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    border: 1px solid white;
+    justify-content: space-around;
+    grid-area: footer;
+    align-items: center
+}
+

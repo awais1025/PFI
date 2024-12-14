@@ -1,0 +1,100 @@
+/* Styles globaux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* En-tête */
+.header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+}
+
+/* Menu déroulant */
+.menu {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.menu-liste {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu-liste > li {
+    position: relative;
+}
+
+.menu-lien {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu-lien:hover {
+    background-color: #575757;
+}
+
+/* Sous-menu */
+.sous-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #575757;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+    z-index: 10;
+}
+
+.sous-menu li a {
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.sous-menu li a:hover {
+    background-color: #4CAF50;
+}
+
+/* Affichage du sous-menu au survol */
+.menu-deroulant:hover .sous-menu {
+    display: block;
+}
+
+/* Section principale */
+.contenu {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.contenu h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
